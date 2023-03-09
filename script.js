@@ -43,7 +43,7 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
-const { menu = [], starterMenu: starters = [] } = restaurant;
+const { menu = [], starterMenu: starters = [], location: loc } = restaurant;
 console.log(menu, starters);
 
 // Destructuring arrays
