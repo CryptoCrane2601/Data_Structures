@@ -43,8 +43,22 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
-const { menu = [], starterMenu: starters = [], location: loc } = restaurant;
+// Default values
+const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters);
+
+// Mutating variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 27, c: 34 };
+({ a, b } = obj);
+console.log(a, b);
+
+// Nested objects
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
 
 // Destructuring arrays
 // let [main, secondary] = restaurant.categories;
