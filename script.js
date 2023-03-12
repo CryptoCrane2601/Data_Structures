@@ -90,3 +90,10 @@ console.log(...goodNewArr);
 
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
+
+// Copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Join 2 or more arrays
+const menuNew = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menuNew);
