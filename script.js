@@ -77,3 +77,16 @@ console.log(open, close);
 // const [starter, mainCourse] = restaurant.order(2, 0);
 
 // console.log(starter, mainCourse);
+
+const arr = [7, 8, 9];
+// Bad way for creating new array
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+// Good way for creating new array - spread
+const goodNewArr = [1, 2, ...arr];
+console.log(goodNewArr);
+
+console.log(...goodNewArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
