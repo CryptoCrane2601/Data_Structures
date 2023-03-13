@@ -78,7 +78,7 @@ console.log(open, close);
 
 // console.log(starter, mainCourse);
 
-const arr = [7, 8, 9];
+const arr = [7, 8, 9, 10, 19];
 // Bad way for creating new array
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
