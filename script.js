@@ -78,7 +78,7 @@ console.log(open, close);
 
 // console.log(starter, mainCourse);
 
-const arr = [7, 8, 9, 10, 19];
+const arr = [7, 8, 9];
 // Bad way for creating new array
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
@@ -97,3 +97,8 @@ const mainMenuCopy = [...restaurant.mainMenu];
 // Join 2 or more arrays
 const menuNew = [...restaurant.mainMenu, ...restaurant.starterMenu];
 console.log(menuNew);
+
+// spread operator on string
+const str = 'Dejan';
+const letters = [...str, '', 'K'];
+console.log(letters);
