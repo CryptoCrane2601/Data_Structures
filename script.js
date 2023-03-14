@@ -102,3 +102,4 @@ console.log(menuNew);
 const str = 'Dejan';
 const letters = [...str, '', 'K'];
 console.log(letters);
+console.log(...str);
