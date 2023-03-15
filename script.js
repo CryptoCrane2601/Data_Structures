@@ -22,6 +22,12 @@ const restaurant = {
     );
   },
 
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is you delicious pasta with ${ing1}, ${ing2} and ${ing3} `
+    );
+  },
+
   openingHours: {
     thu: {
       open: 12,
@@ -56,7 +62,7 @@ console.log(menu, starters);
 // Mutating variables
 let a = 111;
 let b = 999;
-const obj = { a: 23, b: 27, c: 34 };
+const obj = { a: 25, b: 21, c: 33 };
 ({ a, b } = obj);
 console.log(a, b);
 
