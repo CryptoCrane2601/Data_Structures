@@ -45,10 +45,14 @@ const restaurant = {
 };
 
 const ingredients = [
-  prompt('Lets make some pasta! Ingredient 1?'),
-  prompt('Ingredient 2?'),
-  prompt('Ingredient 3?'),
+  // prompt('Lets make some pasta! Ingredient 1?'),
+  // prompt('Ingredient 2?'),
+  // prompt('Ingredient 3?'),
 ];
+
+console.log(ingredients);
+
+restaurant.orderPasta(...ingredients);
 
 // Destructuring objects
 const { name, openingHours, categories } = restaurant;
@@ -115,3 +119,11 @@ const str = 'Dejan';
 const letters = [...str, '', 'K'];
 console.log(letters);
 console.log(...str);
+
+// SPREAD operator because RIGHT of =
+const arrSpread = [1, 2, 3, ...[4, 5]];
+console.log(arrSpread);
+
+// REST operator because LEFT of =
+const [d, f, ...others] = [1, 2, 3, 4, 5];
+console.log(d, f, others);
