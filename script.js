@@ -127,3 +127,9 @@ console.log(arrSpread);
 // REST operator because LEFT of =
 const [d, f, ...others] = [1, 2, 3, 4, 5];
 console.log(d, f, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
