@@ -45,9 +45,9 @@ const restaurant = {
 };
 
 const ingredients = [
-  // prompt('Lets make some pasta! Ingredient 1?'),
-  // prompt('Ingredient 2?'),
-  // prompt('Ingredient 3?'),
+  prompt('Lets make some pasta! Ingredient 1?'),
+  prompt('Ingredient 2?'),
+  prompt('Ingredient 3?'),
 ];
 
 console.log(ingredients);
