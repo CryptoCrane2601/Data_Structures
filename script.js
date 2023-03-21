@@ -44,11 +44,11 @@ const restaurant = {
   },
 };
 
-const ingredients = [
-  prompt('Lets make some pasta! Ingredient 1?'),
-  prompt('Ingredient 2?'),
-  prompt('Ingredient 3?'),
-];
+// const ingredients = [
+//   prompt('Lets make some pasta! Ingredient 1?'),
+//   prompt('Ingredient 2?'),
+//   prompt('Ingredient 3?'),
+// ];
 
 console.log(ingredients);
 
@@ -128,8 +128,8 @@ console.log(arrSpread);
 const [d, f, ...others] = [1, 2, 3, 4, 5];
 console.log(d, f, others);
 
-// const [pizza, , risotto, ...otherFood] = [
-//   ...restaurant.mainMenu,
-//   ...restaurant.starterMenu,
-// ];
-// console.log(pizza, risotto, otherFood);
+const [pizza, , risotto, , ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
