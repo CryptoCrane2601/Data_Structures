@@ -44,11 +44,11 @@ const restaurant = {
   },
 };
 
-// const ingredients = [
-//   prompt('Lets make some pasta! Ingredient 1?'),
-//   prompt('Ingredient 2?'),
-//   prompt('Ingredient 3?'),
-// ];
+const ingredients = [
+  //   prompt('Lets make some pasta! Ingredient 1?'),
+  //   prompt('Ingredient 2?'),
+  //   prompt('Ingredient 3?'),
+];
 
 console.log(ingredients);
 
@@ -133,3 +133,17 @@ const [pizza, , risotto, , ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log(pizza, risotto, otherFood);
+
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+const add = function (...numbers) {
+  // console.log(numbers);
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+
+add(2, 3);
+add(2, 4, 6, 7, 8);
+add(1, 3, 2, 5, 6, 7, 8, 9);
