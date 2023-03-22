@@ -147,3 +147,6 @@ const add = function (...numbers) {
 add(2, 3);
 add(2, 4, 6, 7, 8);
 add(1, 3, 2, 5, 6, 7, 8, 9);
+
+const x = [25, 27, 7];
+add(...x);
