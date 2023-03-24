@@ -155,3 +155,5 @@ console.log(3 || 'Dejan');
 console.log('' || 'Dejan');
 console.log(true || 0);
 console.log(undefined || null);
+
+console.log(0 && 'Dejan');
