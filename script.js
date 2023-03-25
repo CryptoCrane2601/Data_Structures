@@ -151,9 +151,14 @@
 // const x = [25, 27, 7];
 // add(...x);
 
+console.log('------OR------');
 console.log(3 || 'Dejan');
 console.log('' || 'Dejan');
 console.log(true || 0);
 console.log(undefined || null);
 
+console.log('------AND------');
 console.log(0 && 'Dejan');
+console.log(7 && 'Dejan');
+
+console.log('Hello' && null && 'Dejan' && 23);
