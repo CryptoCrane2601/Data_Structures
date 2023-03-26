@@ -162,3 +162,25 @@ console.log(0 && 'Dejan');
 console.log(7 && 'Dejan');
 
 console.log('Hello' && null && 'Dejan' && 23);
+
+const rest1 = {
+  name: 'Capri',
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Dejan',
+};
+
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests = rest1.numGuests || 10;
+
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+console.log(rest1);
+console.log(rest2);
