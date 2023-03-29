@@ -186,6 +186,6 @@ const restaurant = {
 // console.log(rest1);
 // console.log(rest2);
 
-const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// for (const item of menu) console.log(item);
 
-for (const item of menu) console.log(item);
+// Loop over objects:
