@@ -189,3 +189,5 @@ const restaurant = {
 // for (const item of menu) console.log(item);
 
 // Loop over objects:
+
+const a = 
