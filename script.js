@@ -188,4 +188,6 @@ const restaurant = {
 
 // for (const item of menu) console.log(item);
 
-// Loop over objects:
+// Sets
+const ordersSet = new Set(['Pasta', 'Pizza', 'Rissoto', 'Pasta', 'Pizza']);
+console.log(ordersSet);
