@@ -191,3 +191,26 @@ const restaurant = {
 // Sets
 const ordersSet = new Set(['Pasta', 'Pizza', 'Rissoto', 'Pasta', 'Pizza']);
 console.log(ordersSet);
+
+const nameSet = new Set('Dejan');
+console.log(nameSet);
+
+console.log(ordersSet.size);
+console.log(nameSet.size);
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Rissoto');
+// ordersSet.clear();
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+// Example:
+
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
