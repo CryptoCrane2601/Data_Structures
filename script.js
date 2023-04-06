@@ -214,3 +214,10 @@ const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 
 const staffUnique = [...new Set(staff)];
 console.log(staffUnique);
+
+const rest = new Map();
+rest.set('name', 'Clasico Italano');
+console.log(rest);
+rest.set(1, 'Firenze, Italy');
+rest.set(2, 'Lisbon, Portugal');
+console.log(rest);
