@@ -260,10 +260,10 @@ for (const [key, value] of question) {
   }
 }
 
-const answer = Number(prompt('Your answer?'));
-console.log(answer);
-if (answer === question.get('correct')) {
-  console.log(question.get(true));
-} else {
-  console.log(question.get(false));
-}
+// const answer = Number(prompt('Your answer?'));
+// console.log(answer);
+// if (answer === question.get('correct')) {
+//   console.log(question.get(true));
+// } else {
+//   console.log(question.get(false));
+// }
