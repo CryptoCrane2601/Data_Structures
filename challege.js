@@ -141,3 +141,9 @@ const gameEvents = new Map([
 
 const events = new Set(gameEvents.values());
 console.log(events);
+
+gameEvents.delete(64);
+console.log(gameEvents);
+
+const str = `An event happened, on average, every 9 minutes`;
+console.log(str);
