@@ -139,13 +139,24 @@ const gameEvents = new Map([
   [92, '🔶 Yellow card'],
 ]);
 
+// 1.
 const events = new Set(gameEvents.values());
 console.log(events);
 
+// 2.
 gameEvents.delete(64);
 console.log(gameEvents);
 
+// 3.
+const gameTime = [...gameEvents.keys()].pop();
+console.log(gameTime);
 const str = `An event happened, on average, every ${
-  90 / gameEvents.size
-} minutes`;
+  gameTime / gameEvents.size
+}  minutes`;
 console.log(str);
+
+// 4.
+for (const [min, event] of gameEvents) {
+  const half = min < 45 ? 'FIRT' : 'SECOND';
+  console.log(`[${half} HALF] ${min}: ${event}`);
+}
