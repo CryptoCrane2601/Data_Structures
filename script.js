@@ -277,3 +277,12 @@ console.log(plane[1]);
 
 console.log(airline.length);
 console.log('8737'.length);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('Portugal')); // Case sensitive
+
+console.log(airline.slice(4));
+
+console.log(airline.toLocaleLowerCase());
+console.log(airline.toLocaleUpperCase());
