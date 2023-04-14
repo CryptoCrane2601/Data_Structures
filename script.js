@@ -5,13 +5,13 @@
 // //   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-};
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+// };
 
 // //   order: function (starterIndex, mainIndex) {
 // //     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -189,76 +189,76 @@ const restaurant = {
 // for (const item of menu) console.log(item);
 
 // Sets
-const ordersSet = new Set(['Pasta', 'Pizza', 'Rissoto', 'Pasta', 'Pizza']);
-console.log(ordersSet);
+// const ordersSet = new Set(['Pasta', 'Pizza', 'Rissoto', 'Pasta', 'Pizza']);
+// console.log(ordersSet);
 
-const nameSet = new Set('Dejan');
-console.log(nameSet);
+// const nameSet = new Set('Dejan');
+// console.log(nameSet);
 
-console.log(ordersSet.size);
-console.log(nameSet.size);
-console.log(ordersSet.has('Pizza'));
-console.log(ordersSet.has('Bread'));
+// console.log(ordersSet.size);
+// console.log(nameSet.size);
+// console.log(ordersSet.has('Pizza'));
+// console.log(ordersSet.has('Bread'));
 
-ordersSet.add('Garlic Bread');
-ordersSet.add('Garlic Bread');
-ordersSet.delete('Rissoto');
-// ordersSet.clear();
-console.log(ordersSet);
+// ordersSet.add('Garlic Bread');
+// ordersSet.add('Garlic Bread');
+// ordersSet.delete('Rissoto');
+// // ordersSet.clear();
+// console.log(ordersSet);
 
-for (const order of ordersSet) console.log(order);
+// for (const order of ordersSet) console.log(order);
 
-// Example:
+// // Example:
 
-const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+// const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 
-const staffUnique = [...new Set(staff)];
-console.log(staffUnique);
+// const staffUnique = [...new Set(staff)];
+// console.log(staffUnique);
 
-const rest = new Map();
-rest.set('name', 'Clasico Italano');
-console.log(rest);
-rest.set(1, 'Firenze, Italy');
-rest.set(2, 'Lisbon, Portugal');
-console.log(rest);
+// const rest = new Map();
+// rest.set('name', 'Clasico Italano');
+// console.log(rest);
+// rest.set(1, 'Firenze, Italy');
+// rest.set(2, 'Lisbon, Portugal');
+// console.log(rest);
 
-rest
-  .set('categories', ['Italian', 'Pizzeria', 'Vegeterian', 'Organic'])
-  .set('open', 11)
-  .set('close', 23)
-  .set(true, 'We are open')
-  .set(false, 'We are closed');
+// rest
+//   .set('categories', ['Italian', 'Pizzeria', 'Vegeterian', 'Organic'])
+//   .set('open', 11)
+//   .set('close', 23)
+//   .set(true, 'We are open')
+//   .set(false, 'We are closed');
 
-console.log(rest.get('name'));
-// console.log(rest.get(true));
+// console.log(rest.get('name'));
+// // console.log(rest.get(true));
 
-const time = 21;
-console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+// const time = 21;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 
-console.log(rest.has('categories'));
-console.log(rest.delete(2));
-console.log(rest.size);
-// console.log(rest.clear());
-console.log(rest);
+// console.log(rest.has('categories'));
+// console.log(rest.delete(2));
+// console.log(rest.size);
+// // console.log(rest.clear());
+// console.log(rest);
 
-const question = new Map([
-  ['question', 'What is the best programming language in the world?'],
-  [1, 'C'],
-  [2, 'Java'],
-  [3, 'JavaScript'],
-  ['correct', 3],
-  [true, 'Correct!'],
-  [false, 'Try again'],
-]);
+// const question = new Map([
+//   ['question', 'What is the best programming language in the world?'],
+//   [1, 'C'],
+//   [2, 'Java'],
+//   [3, 'JavaScript'],
+//   ['correct', 3],
+//   [true, 'Correct!'],
+//   [false, 'Try again'],
+// ]);
 
-console.log(question);
+// console.log(question);
 
-console.log(question.get('question'));
-for (const [key, value] of question) {
-  if (typeof key === 'number') {
-    console.log(`Answer ${key}: ${value}`);
-  }
-}
+// console.log(question.get('question'));
+// for (const [key, value] of question) {
+//   if (typeof key === 'number') {
+//     console.log(`Answer ${key}: ${value}`);
+//   }
+// }
 
 // const answer = Number(prompt('Your answer?'));
 // console.log(answer);
@@ -267,3 +267,13 @@ for (const [key, value] of question) {
 // } else {
 //   console.log(question.get(false));
 // }
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[3]);
+console.log(plane[1]);
+
+console.log(airline.length);
+console.log('8737'.length);
