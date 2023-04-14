@@ -286,3 +286,9 @@ console.log(airline.slice(4));
 
 console.log(airline.toLocaleLowerCase());
 console.log(airline.toLocaleUpperCase());
+
+const passenger = 'dEJaN'; // Dejan
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
