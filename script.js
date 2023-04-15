@@ -287,8 +287,19 @@ console.log(airline.slice(4));
 console.log(airline.toLocaleLowerCase());
 console.log(airline.toLocaleUpperCase());
 
+// Fix capitalization in name
 const passenger = 'dEJaN'; // Dejan
 const passengerLower = passenger.toLowerCase();
 const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
+
+// Split method
+
+const fullName = 'Dejan Kurcubic';
+console.log(fullName.split(' '));
+
+const [firstName, secondName] = 'Dejan Kurcubic'.split(' ');
+console.log(firstName);
+console.log(secondName);
+console.log(firstName, secondName);
