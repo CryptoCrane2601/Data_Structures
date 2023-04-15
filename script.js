@@ -303,3 +303,19 @@ const [firstName, secondName] = 'Dejan Kurcubic'.split(' ');
 console.log(firstName);
 console.log(secondName);
 console.log(firstName, secondName);
+
+const newName = ['Mr.', firstName, secondName.toUpperCase()].join(' ');
+console.log(newName);
+
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(' '));
+};
+
+capitalizeName('dejan kurcubic');
+capitalizeName('katarina perc');
