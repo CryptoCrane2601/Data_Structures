@@ -317,5 +317,18 @@ const capitalizeName = function (name) {
   console.log(namesUpper.join(' '));
 };
 
-capitalizeName('dejan kurcubic');
+capitalizeName('dejan kurcubic ivana kurcubic petar kurcubic');
 capitalizeName('katarina perc');
+
+const message = 'Go to gate 23';
+console.log(message.padStart(30, '_'));
+console.log(message.padEnd(30, '_'));
+console.log(message.padEnd(30, '_'));
+
+const maskCreditCard = function (number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(32343456778872345));
