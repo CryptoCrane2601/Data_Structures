@@ -385,6 +385,9 @@ console.log(flights.split('+'));
 
 for (const flight of flights.split('+')) {
   const [type, from, to, time] = flight.split(';');
-  const output = `${type} ${from} ${to} (${time.replace(':', 'h')})`;
+  const output = `${type.replaceAll('_', ' ')} ${from} ${to} (${time.replace(
+    ':',
+    'h'
+  )})`;
   console.log(output);
 }
